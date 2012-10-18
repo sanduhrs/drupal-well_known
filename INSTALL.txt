@@ -1,0 +1,18 @@
+INSTALL
+-------
+
+1. Create a folder named .well-known in your Drupal webroot
+2. In that folder create a file named .htaccess with the following contents
+
+<code>
+  Options None
+  Options +FollowSymLinks
+
+  <IfModule mod_rewrite.c>
+    RewriteEngine on
+  </IfModule>
+</code>
+
+-- OR --
+
+drush wks

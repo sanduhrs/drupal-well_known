@@ -1,0 +1,19 @@
+<?php
+
+/**
+ * @see http://tools.ietf.org/html/rfc5785
+ */
+
+/**
+ * Implements hook_menu().
+ */
+function well_known_menu() {
+  $items = array();
+  $items['.well-known'] = array(
+    'type' => MENU_CALLBACK,
+    'page callback' => 'well_known_page',
+    'access callback' => TRUE,
+    'file' => 'well_known.pages.inc',
+  );
+  return $items;
+}

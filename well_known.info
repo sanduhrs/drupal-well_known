@@ -1,0 +1,3 @@
+name = Well-Known Uniform Resource Identifiers
+description = Defines a path prefix for "well-known locations"
+core = 7.x
